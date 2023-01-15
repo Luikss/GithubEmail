@@ -15,3 +15,4 @@ jobs:
           subject: ${{github.repository}} push event
           body: Push was made in your ${{github.repository}} repository by ${{github.event.pusher.name}} with a message - '${{github.event.head_commit.message}}'
           to: ${{secrets.MAIL_TO}}
+          from: Github actions
